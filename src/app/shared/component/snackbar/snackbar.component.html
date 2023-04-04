@@ -1,0 +1,13 @@
+<div fxLayoutAlign="space-between center" fxLayout="row">
+  <div fxLayoutAlign="center center" fxLayoutGap='2px' fxLayout="row">
+    <div>
+      <mat-icon>{{data.icons}}</mat-icon>
+    </div>
+    <div fxLayoutAlign="start" class="msg" matSnackBarLabel>
+      {{data.message}}
+    </div>
+  </div>
+  <div >
+    <button mat-button matSnackBarAction (click)="close()"><mat-icon>close</mat-icon></button>
+  </div>
+</div>
